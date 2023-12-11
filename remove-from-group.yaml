@@ -2,7 +2,7 @@
   desc: Detect removing user from Group in Okta
   condition: okta.evt.type = "group.user_membership.remove"
   output: >-
-    A user has removed all MFA from an Okta account (okta.result=%okta.result,
+    A user was removed from a group (okta.result=%okta.result,
     okta.severity=%okta.severity, okta.message=%okta.message,
     okta.target.group.name=%okta.target.group.name,
     okta.actor.user=%okta.actor.name, okta.client.ip=%okta.client.ip,
