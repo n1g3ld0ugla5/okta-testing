@@ -49,5 +49,10 @@ rm falco_rules.local.yaml
 wget https://raw.githubusercontent.com/n1g3ld0ugla5/okta-testing/main/falco_rules.local.yaml
 ```
 
-
-
+## Falco03
+```
+ssh -i "falco-okta.pem" ubuntu@ec2-33-333-33-333.eu-west-1.compute.amazonaws.com
+```
+```
+ssh -L 2802:localhost:2802 ubuntu@ec2-33-333-33-333.eu-west-1.compute.amazonaws.com -i falco-okta.pem
+```
