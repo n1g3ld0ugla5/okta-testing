@@ -1,0 +1,18 @@
+- rule: Removing user from Group
+  desc: Detect removing user from Group in Okta
+  condition: okta.evt.type = "group.user_membership.remove"
+  output: >-
+    A user has removed all MFA from an Okta account (okta.result=%okta.result,
+    okta.severity=%okta.severity, okta.message=%okta.message,
+    okta.target.group.name=%okta.target.group.name,
+    okta.actor.user=%okta.actor.name, okta.client.ip=%okta.client.ip,
+    okta.client.device=%okta.client.device,
+    okta.useragent.raw=%okta.useragent.raw,
+    okta.principal.name=%okta.principal.name,
+    okta.target.user.name=%okta.target.user.name)
+  priority: warning
+  tags:
+  - okta
+  - mitre_impact
+  - T1531
+  source: okta
