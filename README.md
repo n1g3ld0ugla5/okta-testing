@@ -40,5 +40,14 @@ cat falco.yaml | grep api
 
 ```api_token:``` 008cYuP#####9VA_v-qdrXqJg-evYJK######Hc8a
 
+### Download a healthy previous state of the rules
+```
+rm falco_rules.local.yaml
+```
+
+```
+wget https://raw.githubusercontent.com/n1g3ld0ugla5/okta-testing/main/falco_rules.local.yaml
+```
+
 
 
