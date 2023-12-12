@@ -9,7 +9,8 @@
     okta.client.device=%okta.client.device,
     okta.useragent.raw=%okta.useragent.raw,
     okta.principal.name=%okta.principal.name,
-    okta.target.user.name=%okta.target.user.name)
+    okta.target.user.name=%okta.target.user.name,
+    okta.useragent.os=%okta.useragent.os)
   priority: warning
   tags:
   - okta
